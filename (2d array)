@@ -1,0 +1,17 @@
+#include <stdio.h> // 2d arrya code using for loops
+
+int main() // using for loop
+{
+   int i,j,marks[2][4]={{10, 20, 30, 40},{10, 20, 30, 40}};   
+  
+   
+   for(i = 0; i < 2; i++){
+        for(j = 0; j < 4; j++){
+       
+       printf("%d",marks[i][j]);
+    }
+    printf("\n");
+   }
+
+    return 0;
+}
