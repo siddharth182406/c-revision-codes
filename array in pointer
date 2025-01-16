@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+  int array[]={10,20,30,40,50,60};
+  int* arrayptra = array;
+  printf("the addreas of first element is %d\n",&array[0]);
+  printf("the addreas of first element is %d\n",array);
+  printf("the addreas of first element is %d\n",array+0);
+  arrayptra++; // you cant write array++ or -- coz it is constant if you want to write you can write in this way
+               // taking int* arrayptra = array, write in this to avoide error
+  
+  
+  printf("the value at addreas of first element of the array is %d\n",*(&array[0]));
+  printf("the value at addreas of first element of the array is %d\n",array[0]);
+  printf("the value at addreas of first element of the array is %d\n",*(array));
+  printf("the value at addreas of first element of the array is %d\n",*(array+0));
+  
+  
+    return 0;
+}
